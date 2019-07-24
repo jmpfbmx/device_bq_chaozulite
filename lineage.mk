@@ -1,4 +1,3 @@
-    
 #
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
@@ -26,7 +25,7 @@ $(call inherit-product, device/bq/chaozulite/device.mk)
 $(call inherit-product, device/bq/msm8937-common/msm8937.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := bq
@@ -36,12 +35,11 @@ PRODUCT_BRAND := bq
 PRODUCT_MODEL := Aquaris U Lite
 PRODUCT_MANUFACTURER := bq
 
-# Set product device & name
-PRODUCT_BUILD_PROP_OVERRIDES += \
-   PRODUCT_NAME=chaozulite
 
 PRODUCT_GMS_CLIENTID_BASE := android-bq
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=bq/chaozulite/chaozulite:7.1.2/NMF26F/1109:user/release-keys \
-    PRIVATE_BUILD_DESC="chaozulite-user 7.1.2 NMF26F 1109 release-keys"
+       PRODUCT_NAME=chaozulite \
+       PRIVATE_BUILD_DESC="chaozulite-user 7.1.2 NMF26F 1109 release-keys"
+
+BUILD_FINGERPRINT=bq/chaozulite/chaozulite:7.1.2/NMF26F/1109:user/release-keys
