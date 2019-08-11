@@ -18,6 +18,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/bq/chaozulite/chaozulite-vendor.mk)
 
+PRODUCT_PACKAGES += \
+    wcnss_service
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc 
