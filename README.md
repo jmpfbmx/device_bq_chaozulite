@@ -3,7 +3,7 @@
 **************************************************************************************
 ## For sync these device/bq/chaozulite you only have to do that:
 ```
-  `git clone -b wifi-test https://github.com/chaozulite-developers/android_device_bq_chaozulite device/bq/chaozulite`
+  `git clone -b master https://github.com/chaozulite-developers/android_device_bq_chaozulite device/bq/chaozulite`
 ```
 
 Device configuration for BQ AQUARIS U LITE
