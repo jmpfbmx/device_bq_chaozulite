@@ -44,7 +44,7 @@ PRODUCT_MANUFACTURER := bq
 # Set product device & name
 PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_NAME=chaozulite \
-   DEVICE_MAINTAINERS="JoseBMX (MiDEVs) and Maanush"
+   DEVICE_MAINTAINERS="JoseBMX (MiDEVs), Maanush and Pablito2020"
 
 PRODUCT_GMS_CLIENTID_BASE := android-bq
 
