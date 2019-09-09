@@ -7,9 +7,9 @@
   },
   {
     "target_path": "device/bq/msm8937-common",   
-    "repository":  "chaozulite-developers/device_bq_msm8937-common",
+    "repository":  "chaozulite-developers/android_device_bq_msm8937-common_chaozulite",
     "remote":      "github",
-    "revision":    "master" 
+    "revision":    "cm-14.1" 
   },
   {
     "target_path": "vendor/bq/chaozulite",   
