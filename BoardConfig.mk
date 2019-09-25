@@ -27,6 +27,3 @@ TARGET_KERNEL_CONFIG := chaozulite_defconfig
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
-# inherit from the proprietary version
--include vendor/bq/chaozulite/BoardConfigVendor.mk
