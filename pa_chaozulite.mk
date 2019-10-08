@@ -16,13 +16,22 @@
 ifeq (pa_chaozulite,$(TARGET_PRODUCT))
 
 # Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := HDPI
+PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_hdpi
+OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
+
+# Inherit framework first
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from chaozulite device
+$(call inherit-product, device/bq/chaozulite/device.mk)
+
+# Inherit from common device
+$(call inherit-product, device/bq/msm8937-common/msm8937.mk)
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/main.mk
@@ -32,7 +41,6 @@ $(call inherit-product, device/bq/chaozulite/full_chaozulite.mk)
 
 # Product Package Extras - Repos can be added manually or via addprojects.py
 -include vendor/pa/products/chaozulite/pa_chaozulite.mk
-
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_chaozulite
