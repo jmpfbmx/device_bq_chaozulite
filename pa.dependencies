@@ -1,0 +1,8 @@
+[
+  {
+    "target_path": "kernel/bq/msm8937",
+    "repository":  "chaozulite-developers/android_kernel_bq_msm8937",
+    "remote":      "github",
+    "revision":    "quartz"
+  }
+]
