@@ -52,6 +52,7 @@ PRODUCT_GMS_CLIENTID := android-bq
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Aquaris U Lite" \
     TARGET_DEVICE="chaozulite" \
+    DEVICE_MAINTAINERS="JoseBMX, Maanush, Pablito2020 and xboxfanj  \
     BUILD_FINGERPRINT=bq/chaozulite/chaozulite:7.1.2/NMF26F/1109:user/release-keys \
     PRIVATE_BUILD_DESC="chaozulite-user 7.1.2 NMF26F 1109 release-keys"
 
