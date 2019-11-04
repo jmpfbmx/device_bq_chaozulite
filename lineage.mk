@@ -35,21 +35,13 @@ PRODUCT_BRAND := bq
 PRODUCT_MODEL := Aquaris U Lite
 PRODUCT_MANUFACTURER := bq
 
+PRODUCT_GMS_CLIENTID_BASE := android-bq
+
 # Set product device & name
 PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_NAME=chaozulite \
-   DEVICE_MAINTAINERS="JoseBMX (MiDEVs), Maanush and Pablito2020"
+   DEVICE_MAINTAINERS="JoseBMX (MiDEVs), Maanush and Pablito2020" \
+   PRIVATE_BUILD_DESC="chaozulite-user 7.1.2 NMF26F 1109 release-keys"
 
-PRODUCT_GMS_CLIENTID_BASE := android-bq
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=bq/chaozulite/chaozulite:7.1.2/NMF26F/1109:user/release-keys \
-    PRIVATE_BUILD_DESC="chaozulite-user 7.1.2 NMF26F 1109 release-keys"
-
-# chaozulite specific propierties
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-	
-PRODUCT_PROPERTY_OVERRIDES += \
-  persist.service.adb.enable=1 \
-  persist.service.debuggable=1
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop    
+BUILD_FINGERPRINT := "bq/chaozulite/chaozulite:7.1.2/NMF26F/1109:user/release-keys"
