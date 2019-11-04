@@ -22,9 +22,6 @@ DEVICE_PATH := device/bq/chaozulite
 # Assert
 TARGET_OTA_ASSERT_DEVICE := Aquaris_U_Lite,chaozulite
 
-# Kernel
-TARGET_KERNEL_CONFIG := chaozulite_defconfig
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
