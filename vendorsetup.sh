@@ -1,3 +1,3 @@
-add_lunch_combo pa_chaozulite-userdebug
-add_lunch_combo pa_chaozulite-user
 add_lunch_combo pa_chaozulite-eng
+add_lunch_combo pa_chaozulite-user
+add_lunch_combo pa_chaozulite-userdebug
